@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dropout — Digital Wellbeing</title>
+  <style>
+    :root {
+      --bg-top: #263636;
+      --bg-bottom: #182323;
+      --card-bg: rgba(16, 20, 20, 0.72);
+      --card-border: rgba(255, 255, 255, 0.10);
+      --text-primary: #f4f7f7;
+      --text-secondary: #b6c2c2;
+      --text-muted: #7f9090;
+      --accent: #7ecdb7;
+      --btn-bg: rgba(126, 205, 183, 0.14);
+      --btn-border: rgba(126, 205, 183, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+      background-attachment: fixed;
+      color: var(--text-primary);
+      line-height: 1.65;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 40px 28px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .brand {
+      font-size: 2.3rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+
+    .tagline {
+      font-size: 1.05rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 0.96rem;
+      margin-bottom: 28px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: block;
+      padding: 14px 20px;
+      background: var(--btn-bg);
+      border: 1px solid var(--btn-border);
+      border-radius: 14px;
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.96rem;
+      transition: transform 0.15s ease, background 0.2s ease;
+    }
+
+    .btn:hover {
+      background: rgba(126, 205, 183, 0.22);
+      transform: translateY(-1px);
+    }
+
+    .support {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .support a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(126, 205, 183, 0.35);
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <div class="brand">Dropout</div>
+      <div class="tagline">100% Local-First Digital Wellbeing</div>
+      <p>
+        Regain control of your screen time with progressive visual friction — built with zero accounts, zero tracking, and complete on-device privacy.
+      </p>
+
+      <div class="links">
+        <a class="btn" href="privacy.html">Privacy Policy</a>
+        <a class="btn" href="terms.html">Terms &amp; Conditions</a>
+      </div>
+
+      <div class="support">
+        Need help? Contact <a href="mailto:[support@yourdomain.com]">[support@yourdomain.com]</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
