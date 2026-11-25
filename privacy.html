@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Dropout</title>
+  <style>
+    :root {
+      --bg-top: #263636;
+      --bg-bottom: #182323;
+      --card-bg: rgba(16, 20, 20, 0.72);
+      --card-border: rgba(255, 255, 255, 0.10);
+      --highlight-bg: rgba(114, 198, 174, 0.08);
+      --highlight-border: rgba(114, 198, 174, 0.30);
+      --text-primary: #f4f7f7;
+      --text-secondary: #b6c2c2;
+      --text-muted: #7f9090;
+      --accent: #7ecdb7;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+      background-attachment: fixed;
+      color: var(--text-primary);
+      line-height: 1.65;
+      padding: 32px 16px 64px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .brand {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    .updated {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-top: 8px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 28px 26px;
+      margin-bottom: 20px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 0.96rem;
+      margin-bottom: 12px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 10px 0 12px 20px;
+      color: var(--text-secondary);
+      font-size: 0.96rem;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .highlight {
+      background: var(--highlight-bg);
+      border: 1px solid var(--highlight-border);
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin-top: 14px;
+    }
+
+    .highlight p {
+      color: var(--text-primary);
+      font-size: 0.94rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(126, 205, 183, 0.35);
+      transition: opacity 0.2s ease;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 32px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 24px 12px 48px;
+      }
+      .card {
+        padding: 22px 18px;
+        border-radius: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="brand">Dropout</div>
+      <div class="subtitle">Privacy Policy</div>
+      <div class="updated">Last updated: November 25, 2026</div>
+    </header>
+
+    <section class="card">
+      <p>
+        <strong>Dropout</strong> ("App"), operated by <strong>Nuno Carvalho</strong>, is built on a strict local-first privacy architecture. We believe digital wellbeing tools should help you regain focus without tracking your habits or collecting your personal data. Please also review our <a href="terms.html">Terms &amp; Conditions</a>.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>1. Information We Do Not Collect</h2>
+      <p>
+        Dropout does not require you to create an account, sign in, or provide any personal information. All core functionality runs <strong>100% locally on your Android device</strong>.
+      </p>
+      <ul>
+        <li>We do <strong>not</strong> collect your name, email address, phone number, or location.</li>
+        <li>We do <strong>not</strong> transmit your screen time statistics, timer settings, or list of selected apps to any external server.</li>
+        <li>We do <strong>not</strong> sell, rent, or share any user data with advertisers or third-party data brokers.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>2. How Android System Permissions Are Used</h2>
+      <p>
+        To apply a progressive visual filter over apps you choose to limit, Dropout requires specific Android permissions. These permissions are used strictly on-device:
+      </p>
+      <ul>
+        <li>
+          <strong>Accessibility Service (<code>AccessibilityService</code>):</strong> Used solely to detect in real time which app package is currently active in the foreground so Dropout can start, pause, or reset the visual filter timer for the apps you explicitly selected.
+        </li>
+        <li>
+          <strong>Display Over Other Apps (Screen Overlay):</strong> Used solely to draw the progressive translucent white mist overlay on top of restricted applications.
+        </li>
+        <li>
+          <strong>Installed Applications List:</strong> Used locally within the App so you can view and choose which installed apps to include in your protected list. This list never leaves your device.
+        </li>
+      </ul>
+      <div class="highlight">
+        <p>
+          <strong>Strict Accessibility Commitment:</strong> Dropout never reads, records, stores, or transmits screen text, keystrokes, passwords, messages, images, or any personal interactions performed inside other applications.
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3. Anonymous Crash Diagnostics</h2>
+      <p>
+        To maintain app stability and fix technical bugs, Dropout may use privacy-preserving crash reporting (such as Google Firebase Crashlytics). When a technical error occurs, only anonymous diagnostic metadata (device model, Android OS version, and technical stack trace) is processed. This information cannot be used to identify you or monitor your app usage.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>4. Data Storage &amp; Deletion</h2>
+      <p>
+        All preferences, timer durations, and app selections are stored exclusively in local storage on your device. Because we do not store your data on remote servers, you can permanently delete all App data at any time by clearing the App's storage in your Android Settings or by uninstalling Dropout.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>5. Children's Privacy</h2>
+      <p>
+        Dropout is not directed to children under the age of 13 (or 16 within the European Economic Area), and we do not knowingly collect personal information from children.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>6. Changes &amp; Contact</h2>
+      <p>
+        We may update this Privacy Policy from time to time as Dropout evolves, updating the "Last updated" date at the top of this page.
+      </p>
+      <p>
+        If you have any questions about this Privacy Policy or how Dropout handles permissions, please contact us at <a href="mailto:dropout.app@outlook.pt">dropout.app@outlook.pt</a>.
+      </p>
+    </section>
+
+    <footer>
+      Dropout &bull; 100% Local-First Digital Wellbeing
+    </footer>
+  </main>
+</body>
+</html>
